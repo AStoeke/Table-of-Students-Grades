@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class TableofStudentGrades
+{
+   public static void main (String[] args)
+   {
+       Scanner scan = new Scanner(System.in);
+       String name;
+       int lab, bonus;
+       System.out.println("///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+       System.out.println("==\t    Student Points\t    ==");
+       System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////");
+       System.out.println("");
+       System.out.println("Name\t\t Lab\t Bonus\t Total");
+       System.out.println("----\t\t ---\t -----\t -----");
+       System.out.println("Joe\t\t 43\t 7\t 50");
+       System.out.println("William\t\t 50\t 8\t 58");
+       System.out.println("Mary Sue\t 39\t 10\t 49");
+       System.out.println("Jeff\t\t 47\t 2\t 49");
+       System.out.println("");
+       System.out.println("Please enter your name, how many points you got on the lab and bonus points.\nI will compute how many total points you got.");
+       name = scan.nextLine();
+       lab = scan.nextInt();
+       bonus = scan.nextInt();
+       System.out.println("");
+       System.out.println("Name\t\t Lab\t Bonus\t Total");
+       System.out.println("----\t\t ---\t -----\t -----");
+       System.out.println("Joe\t\t 43\t 7\t 50");
+       System.out.println("William\t\t 50\t 8\t 58");
+       System.out.println("Mary Sue\t 39\t 10\t 49");
+       System.out.println("Jeff\t\t 47\t 2\t 49");
+       System.out.println(name + "\t " + lab + "\t " + bonus + "\t " + (lab + bonus));
+   }
+}
